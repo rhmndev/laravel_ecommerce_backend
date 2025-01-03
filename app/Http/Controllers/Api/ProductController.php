@@ -50,7 +50,7 @@ class ProductController extends Controller {
             'status' => 'success',
             'message' => 'Product created',
             'data' => $product,
-        ], 201); //This closing brace was missing
+        ], 201);
     }
 
     //update
@@ -59,7 +59,7 @@ class ProductController extends Controller {
         $request->validate([
             'category_id' => 'required|exists:categories,id',
             'name' => 'required|string',
-            'description' => 'nullable|string', // Allow null descriptions
+            'description' => 'nullable|string',
             'price' => 'required',
             'stock' => 'required|integer',
             'image' => 'image|mimes:jpg,jpeg,png|max:2048',

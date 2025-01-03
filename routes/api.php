@@ -31,3 +31,8 @@ Route::get('/seller/categories', [App\Http\Controllers\Api\CategoryController::c
 //products
 Route::apiResource('/seller/products', App\Http\Controllers\Api\ProductController::class)->middleware('auth:sanctum');
 
+// update products
+Route::post('/seller/products/{id}', [App\Http\Controllers\Api\ProductController::class, 'update'])->middleware('auth:sanctum');
+
+//address
+Route::apiResource('/buyer/addresses', App\Http\Controllers\Api\AddressController::class)->middleware('auth:sanctum');
