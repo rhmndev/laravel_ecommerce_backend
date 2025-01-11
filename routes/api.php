@@ -28,6 +28,9 @@ Route::post('/seller/category', [App\Http\Controllers\Api\CategoryController::cl
 //get all categories
 Route::get('/seller/categories', [App\Http\Controllers\Api\CategoryController::class, 'index'])->middleware('auth:sanctum');
 
+//get all products
+Route::get('/seller/products', [App\Http\Controllers\Api\ProductController::class, 'index'])->middleware('auth:sanctum');
+
 //products
 Route::apiResource('/seller/products', App\Http\Controllers\Api\ProductController::class)->middleware('auth:sanctum');
 
@@ -36,3 +39,12 @@ Route::post('/seller/products/{id}', [App\Http\Controllers\Api\ProductController
 
 //address
 Route::apiResource('/buyer/addresses', App\Http\Controllers\Api\AddressController::class)->middleware('auth:sanctum');
+
+//order
+Route::post('/buyer/orders', [App\Http\Controllers\Api\OrderController::class, 'createOrder'])->middleware('auth:sanctum');
+
+//store
+Route::get('/buyer/stores', [App\Http\Controllers\Api\StoreController::class, 'index'])->middleware('auth:sanctum');
+
+//product by store
+Route::get('/buyer/stores/{id}/products', [App\Http\Controllers\Api\StoreController::class, 'productByStore'])->middleware('auth:sanctum');

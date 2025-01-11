@@ -22,7 +22,7 @@ class OrderController extends Controller
             'shipping_cost' => 'required|integer',
             'shipping_service' => 'required|string',
             //bank va name
-            'bank_va_name' => 'required|string',
+            // 'bank_va_name' => 'required|string',
 
         ]);
 
@@ -46,7 +46,7 @@ class OrderController extends Controller
             'total_price' => $totalPrice,
             'grand_total' => $grandTotal,
             'transaction_number' => 'TRX-' . time(),
-            'payment_va_name' => $request->bank_va_name,
+            // 'payment_va_name' => $request->bank_va_name,
         ]);
 
         foreach ($request->items as $item) {
