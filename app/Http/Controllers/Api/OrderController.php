@@ -65,4 +65,46 @@ class OrderController extends Controller
             'order' => $order,
         ]);
     }
+
+    //update shipping number
+    public function updateShippingNumber(Request $request, $id)
+    {
+        $request->validate([
+            'shipping_number' => 'required|string',
+        ]);
+
+        $order = Order::find($id);
+        $order->update([
+            'shipping_number' => $request->shipping_number,
+        ]);
+
+        return response()->json([
+            'message' => 'Shipping number updated successfully',
+            'order' => $order,
+        ]);
+    }
+
+    //history order buyer
+    public function historyOrderBuyer(Request $request)
+    {
+        $user = $request->user();
+        $orders = Order::where('user_id', $user->id)->get();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'List history Order Buyer',
+            'data' => $orders
+        ]);
+    }
+
+    //history order seller
+    public function historyOrderSeller(Request $request)
+    {
+        $user = $request->user();
+        $orders = Order::where('seller_id', $user->id)->get();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'List history Order Seller',
+            'data' => $orders
+        ]);
+    }
 }
