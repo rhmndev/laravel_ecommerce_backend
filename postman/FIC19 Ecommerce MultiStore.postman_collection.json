@@ -1,0 +1,2963 @@
+{
+	"info": {
+		"_postman_id": "d4fb1bf7-575c-483e-976e-e70fdc5fcf4c",
+		"name": "FIC19 Ecommerce MultiStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31320042"
+	},
+	"item": [
+		{
+			"name": "Register Seller",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Toko Elektronik RN",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "elektronik@seller.com",
+							"description": " ",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081213234232",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "bekasi",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "indonesia",
+							"type": "text"
+						},
+						{
+							"key": "province",
+							"value": "Jawa Barat",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Bekasi",
+							"type": "text"
+						},
+						{
+							"key": "district",
+							"value": "Tarumajaya",
+							"type": "text"
+						},
+						{
+							"key": "postal_code",
+							"value": "17211",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/rhmndev/Pictures/Images/automotive-img.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Buyer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Rahman Nurhadi\",\r\n    \"email\" : \"rahman@buyer.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/buyer/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyer",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/seller/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Toko Badminton Radi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "radi@seller.com",
+									"description": " ",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0896457894568",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "bekasi",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "indonesia",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "Jawa Barat",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bekasi",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "Tarumajaya",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "17211",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/images.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 22:45:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User registered\",\n    \"data\": {\n        \"name\": \"Toko Badminton Radi\",\n        \"email\": \"radi@seller.com\",\n        \"phone\": \"0896457894568\",\n        \"address\": \"bekasi\",\n        \"country\": \"indonesia\",\n        \"province\": \"Jawa Barat\",\n        \"city\": \"Bekasi\",\n        \"district\": \"Tarumajaya\",\n        \"postal_code\": \"17211\",\n        \"roles\": \"seller\",\n        \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n        \"updated_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"id\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login / 200 LOGIN Seller",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"badminton@seller.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/seller/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Toko Badminton Radi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "radi@seller.com",
+									"description": " ",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0896457894568",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "bekasi",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "indonesia",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "Jawa Barat",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bekasi",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "Tarumajaya",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "17211",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/images.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 22:45:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User registered\",\n    \"data\": {\n        \"name\": \"Toko Badminton Radi\",\n        \"email\": \"radi@seller.com\",\n        \"phone\": \"0896457894568\",\n        \"address\": \"bekasi\",\n        \"country\": \"indonesia\",\n        \"province\": \"Jawa Barat\",\n        \"city\": \"Bekasi\",\n        \"district\": \"Tarumajaya\",\n        \"postal_code\": \"17211\",\n        \"roles\": \"seller\",\n        \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n        \"updated_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"id\": 1\n    }\n}"
+				},
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"radi@seller.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 23:07:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User logged in\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Toko Badminton Radi\",\n        \"email\": \"radi@seller.com\",\n        \"phone\": \"0896457894568\",\n        \"address\": \"bekasi\",\n        \"country\": \"indonesia\",\n        \"province\": \"Jawa Barat\",\n        \"city\": \"Bekasi\",\n        \"district\": \"Tarumajaya\",\n        \"postal_code\": \"17211\",\n        \"roles\": \"seller\",\n        \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n    },\n    \"token\": \"3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login / 200 LOGIN Buyer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"elektronik@seller.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/seller/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Toko Badminton Radi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "radi@seller.com",
+									"description": " ",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0896457894568",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "bekasi",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "indonesia",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "Jawa Barat",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bekasi",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "Tarumajaya",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "17211",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/images.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 22:45:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User registered\",\n    \"data\": {\n        \"name\": \"Toko Badminton Radi\",\n        \"email\": \"radi@seller.com\",\n        \"phone\": \"0896457894568\",\n        \"address\": \"bekasi\",\n        \"country\": \"indonesia\",\n        \"province\": \"Jawa Barat\",\n        \"city\": \"Bekasi\",\n        \"district\": \"Tarumajaya\",\n        \"postal_code\": \"17211\",\n        \"roles\": \"seller\",\n        \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n        \"updated_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"id\": 1\n    }\n}"
+				},
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"radi@seller.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 23:07:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User logged in\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Toko Badminton Radi\",\n        \"email\": \"radi@seller.com\",\n        \"phone\": \"0896457894568\",\n        \"address\": \"bekasi\",\n        \"country\": \"indonesia\",\n        \"province\": \"Jawa Barat\",\n        \"city\": \"Bekasi\",\n        \"district\": \"Tarumajaya\",\n        \"postal_code\": \"17211\",\n        \"roles\": \"seller\",\n        \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n    },\n    \"token\": \"3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc\"\n}"
+				}
+			]
+		},
+		{
+			"name": "api/user GET BUYER",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|pNJg4VBsHAJGxuy58nx0n0dGsFcoWOMmKcs1R5UQ8f325548",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/user GET SELLER 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 16|Uvere4UA0sQUYk5US3rt8E8WDjCv7nld3ofbIny744735007",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/user GET SELLER 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 8|abVFOZtBdjBlOwsrxJbOJyylaoTeOUjSGaclVlnKa1932995",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/logout LOGOUT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|0RBboM6MH5FI6Jy2Dv1c3zGMbk7xUFAEkHwMqqu55e1ffce8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/seller/category STORE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 8|abVFOZtBdjBlOwsrxJbOJyylaoTeOUjSGaclVlnKa1932995",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shuttlecock\",\r\n    \"description\": \"Badminton shuttlecock bagus dan berkualitas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/seller/categories GET ALL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 11|JEsDpw3xzAdffio1OlgZbvLBqLYDaDiON4lqdbYf55561ecc",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 11|JEsDpw3xzAdffio1OlgZbvLBqLYDaDiON4lqdbYf55561ecc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 12|JbOOemsJ99llPkStcGv5q0UneK78z3X9GQIxo05w2afacf26",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Raket Badminton Promaximum Eagle",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "sepatu badminton bagus",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "750000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/rhmndev/Pictures/photos/VANQUISH-PUTIH-4.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "save products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Hp Infinix Note 40",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keren banget sih nih hp dan banyak fiturnya",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2700000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Jan 2025 22:30:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product created\",\n    \"data\": {\n        \"seller_id\": 1,\n        \"category_id\": \"3\",\n        \"name\": \"Hp Infinix Note 40\",\n        \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n        \"price\": \"2700000\",\n        \"stock\": \"23\",\n        \"image\": \"assets/product/sYiQ5XQygXXfbFKkASyMLXSsWHmg4kRQGwccpkJr.png\",\n        \"updated_at\": \"2025-01-02T22:30:30.000000Z\",\n        \"created_at\": \"2025-01-02T22:30:30.000000Z\",\n        \"id\": 5\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "save products Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Hp Infinix Note 40",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "keren banget sih nih hp dan banyak fiturnya",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2700000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "save products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Hp Infinix Note 40",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keren banget sih nih hp dan banyak fiturnya",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2700000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"products"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Jan 2025 22:30:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product created\",\n    \"data\": {\n        \"seller_id\": 1,\n        \"category_id\": \"3\",\n        \"name\": \"Hp Infinix Note 40\",\n        \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n        \"price\": \"2700000\",\n        \"stock\": \"23\",\n        \"image\": \"assets/product/sYiQ5XQygXXfbFKkASyMLXSsWHmg4kRQGwccpkJr.png\",\n        \"updated_at\": \"2025-01-02T22:30:30.000000Z\",\n        \"created_at\": \"2025-01-02T22:30:30.000000Z\",\n        \"id\": 5\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "List products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 16|Uvere4UA0sQUYk5US3rt8E8WDjCv7nld3ofbIny744735007",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Hp Infinix Note 40",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keren banget sih nih hp dan banyak fiturnya",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2700000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Jan 2025 22:34:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Products\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/gdZm8LhqDMvAMh6BV2Hrfv9EhvPw1pBOTLXGoaON.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"updated_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/YbGHiugkGGWNle8NeKj1LgMg6cuBX333MDXzkKqX.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"updated_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/DNF4Zi6exeKLiIcJEbiHcGBha8XkW9E7iIS790ZY.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"updated_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/cxMXQsl5RHyxsOBXMZz1rPjGcxrdjez49lVa0tbq.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"updated_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/sYiQ5XQygXXfbFKkASyMLXSsWHmg4kRQGwccpkJr.png\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"updated_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "List products Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 17|aaherYKgphnKLvJL9mUCiIDCTQ8kJGDM1WR4MdeG4926cc0f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Hp Infinix Note 40",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "keren banget sih nih hp dan banyak fiturnya",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2700000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Hp Infinix Note 40",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keren banget sih nih hp dan banyak fiturnya",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2700000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Jan 2025 22:34:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Products\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/gdZm8LhqDMvAMh6BV2Hrfv9EhvPw1pBOTLXGoaON.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"updated_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/YbGHiugkGGWNle8NeKj1LgMg6cuBX333MDXzkKqX.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"updated_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/DNF4Zi6exeKLiIcJEbiHcGBha8XkW9E7iIS790ZY.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"updated_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/cxMXQsl5RHyxsOBXMZz1rPjGcxrdjez49lVa0tbq.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"updated_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/sYiQ5XQygXXfbFKkASyMLXSsWHmg4kRQGwccpkJr.png\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"updated_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "update products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 17|aaherYKgphnKLvJL9mUCiIDCTQ8kJGDM1WR4MdeG4926cc0f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "AC Samssung 1/2 PK",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "AC yang dingin dan sejuk nyaman untuk ruangan keluarga dan kamar",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "4500000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/rhmndev/Pictures/photos/Mengenal-Berbagai-Jenis-AC.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Hp Infinix Note 40",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keren banget sih nih hp dan banyak fiturnya",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2700000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Jan 2025 22:34:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Products\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/gdZm8LhqDMvAMh6BV2Hrfv9EhvPw1pBOTLXGoaON.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"updated_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/YbGHiugkGGWNle8NeKj1LgMg6cuBX333MDXzkKqX.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"updated_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/DNF4Zi6exeKLiIcJEbiHcGBha8XkW9E7iIS790ZY.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"updated_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/cxMXQsl5RHyxsOBXMZz1rPjGcxrdjez49lVa0tbq.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"updated_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/sYiQ5XQygXXfbFKkASyMLXSsWHmg4kRQGwccpkJr.png\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"updated_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "update products Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 17|aaherYKgphnKLvJL9mUCiIDCTQ8kJGDM1WR4MdeG4926cc0f",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Raket Badminton Promaximum Eagle",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "sepatu badminton bagus",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "750000",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/rhmndev/Pictures/photos/dd3682755ecc3994c7919a536eea593f.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/products/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"products",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Hp Infinix Note 40",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keren banget sih nih hp dan banyak fiturnya",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2700000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Jan 2025 22:34:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Products\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/gdZm8LhqDMvAMh6BV2Hrfv9EhvPw1pBOTLXGoaON.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"updated_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/YbGHiugkGGWNle8NeKj1LgMg6cuBX333MDXzkKqX.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"updated_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/DNF4Zi6exeKLiIcJEbiHcGBha8XkW9E7iIS790ZY.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"updated_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/cxMXQsl5RHyxsOBXMZz1rPjGcxrdjez49lVa0tbq.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"updated_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/sYiQ5XQygXXfbFKkASyMLXSsWHmg4kRQGwccpkJr.png\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"updated_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete products",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 17|aaherYKgphnKLvJL9mUCiIDCTQ8kJGDM1WR4MdeG4926cc0f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/seller/products/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"products",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Hp Infinix Note 40",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "keren banget sih nih hp dan banyak fiturnya",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2700000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/png-transparent-infinix-note-8i-infinix-note-infinix-phone-thumbnail.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Jan 2025 22:34:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Products\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/gdZm8LhqDMvAMh6BV2Hrfv9EhvPw1pBOTLXGoaON.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"updated_at\": \"2025-01-01T12:10:00.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/YbGHiugkGGWNle8NeKj1LgMg6cuBX333MDXzkKqX.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"updated_at\": \"2025-01-02T22:08:47.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/DNF4Zi6exeKLiIcJEbiHcGBha8XkW9E7iIS790ZY.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"updated_at\": \"2025-01-02T22:09:04.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/cxMXQsl5RHyxsOBXMZz1rPjGcxrdjez49lVa0tbq.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"updated_at\": \"2025-01-02T22:16:07.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"seller_id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Hp Infinix Note 40\",\n            \"description\": \"keren banget sih nih hp dan banyak fiturnya\",\n            \"price\": \"2700000.00\",\n            \"stock\": 23,\n            \"image\": \"assets/product/sYiQ5XQygXXfbFKkASyMLXSsWHmg4kRQGwccpkJr.png\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"updated_at\": \"2025-01-02T22:30:30.000000Z\",\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Toko Badminton Radi\",\n                \"email\": \"radi@seller.com\",\n                \"phone\": \"0896457894568\",\n                \"address\": \"bekasi\",\n                \"country\": \"indonesia\",\n                \"province\": \"Jawa Barat\",\n                \"city\": \"Bekasi\",\n                \"district\": \"Tarumajaya\",\n                \"postal_code\": \"17211\",\n                \"roles\": \"seller\",\n                \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n                \"email_verified_at\": null,\n                \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n                \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "buyer/addresses POST Address",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 19|Ex6e26J3E0RosuqWuJs4tVytAgtSn963RfC8sseX0a85f0b4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 3,\r\n    \"address\": \"jalan Kp. Poncol Wetan\",\r\n    \"country\": \"Indoensia\",\r\n    \"province\": \"Jawa Barat\",\r\n    \"city\": \"Bekasi\",\r\n    \"district\": \"Tarumajaya\",\r\n    \"postal_code\": \"17211\",\r\n    \"is_default\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/buyer/addresses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyer",
+						"addresses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Address",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 19|Ex6e26J3E0RosuqWuJs4tVytAgtSn963RfC8sseX0a85f0b4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 3,\r\n    \"address\": \"jalan Kp. merdeka No. 17\",\r\n    \"country\": \"Indonesia\",\r\n    \"province\": \"Jawa Barat\",\r\n    \"city\": \"Bekasi\",\r\n    \"district\": \"Babelan\",\r\n    \"postal_code\": \"17210\",\r\n    \"is_default\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/buyer/addresses/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyer",
+						"addresses",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stores/Toko",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 22|qxdlCHrL2kErFdsQQd6Woux0U7vbkGu1W2dFigWp8dc1fc52",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/buyer/stores/1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyer",
+						"stores",
+						"1",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Store",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 22|qxdlCHrL2kErFdsQQd6Woux0U7vbkGu1W2dFigWp8dc1fc52",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/buyer/stores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyer",
+								"stores"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Jan 2025 10:22:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"List Store\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Toko Badminton Rahman\",\n            \"email\": \"badminton@seller.com\",\n            \"phone\": \"081627236352\",\n            \"address\": \"bekasi\",\n            \"country\": \"indonesia\",\n            \"province\": \"Jawa Barat\",\n            \"city\": \"Bekasi\",\n            \"district\": \"Tarumajaya\",\n            \"postal_code\": \"17211\",\n            \"roles\": \"seller\",\n            \"photo\": \"assets/user/BWpZMGK94oNzrp86MSFYGoFh1FRPSchv8pPabp4W.jpg\",\n            \"email_verified_at\": null,\n            \"created_at\": \"2025-01-07T14:54:22.000000Z\",\n            \"updated_at\": \"2025-01-07T14:54:22.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Toko Elektronik RN\",\n            \"email\": \"elektronik@seller.com\",\n            \"phone\": \"081213234232\",\n            \"address\": \"bekasi\",\n            \"country\": \"indonesia\",\n            \"province\": \"Jawa Barat\",\n            \"city\": \"Bekasi\",\n            \"district\": \"Tarumajaya\",\n            \"postal_code\": \"17211\",\n            \"roles\": \"seller\",\n            \"photo\": \"assets/user/hl1aVeE4UrzYtdjgVYHFfGiVge6N0uIjQwczRs1q.jpg\",\n            \"email_verified_at\": null,\n            \"created_at\": \"2025-01-07T15:23:44.000000Z\",\n            \"updated_at\": \"2025-01-07T15:23:44.000000Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "List Product by Store",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 22|qxdlCHrL2kErFdsQQd6Woux0U7vbkGu1W2dFigWp8dc1fc52",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/buyer/stores/1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyer",
+								"stores",
+								"1",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Jan 2025 11:11:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"List Product by Store\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"seller_id\": 1,\n            \"category_id\": 1,\n            \"name\": \"Sepatu Mirage Eagle\",\n            \"description\": \"Kualitas dari sepatu eagle keluaran terbaru\",\n            \"price\": \"379900.00\",\n            \"stock\": 27,\n            \"image\": \"assets/product/rZHBCd5RYgQMiDxD92GC3nfnNudBgKeP5BlVVbe3.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-11T02:28:44.000000Z\",\n            \"updated_at\": \"2025-01-11T02:28:44.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"seller_id\": 1,\n            \"category_id\": 1,\n            \"name\": \"Sepatu Vanquish Eagle\",\n            \"description\": \"Kualitas dari sepatu eagle keluaran terbaru\",\n            \"price\": \"449900.00\",\n            \"stock\": 50,\n            \"image\": \"assets/product/REHLQLxKikeVu1RzaIqlhTn3cc1Zm5lrLMmxdTAS.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-11T02:30:27.000000Z\",\n            \"updated_at\": \"2025-01-11T02:30:27.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"seller_id\": 1,\n            \"category_id\": 2,\n            \"name\": \"Raket Badminton Promaximum Eagle\",\n            \"description\": \"sepatu badminton bagus\",\n            \"price\": \"750000.00\",\n            \"stock\": 20,\n            \"image\": \"assets/product/psfyBpe2N4GA6My1fuuJJ36UgPgMGLz0aJ2oLR85.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-11T10:35:14.000000Z\",\n            \"updated_at\": \"2025-01-11T10:42:34.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"seller_id\": 1,\n            \"category_id\": 5,\n            \"name\": \"Shuttlecock Alfa All In One\",\n            \"description\": \"Shutlecock tahan lama\",\n            \"price\": \"150000.00\",\n            \"stock\": 113,\n            \"image\": \"assets/product/qlQ2hlounHTEA2JCOo15WXoLJ669eOurD1lHQ4A0.jpg\",\n            \"is_active\": 1,\n            \"created_at\": \"2025-01-11T10:38:12.000000Z\",\n            \"updated_at\": \"2025-01-11T10:38:12.000000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get List History Order Buyer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|pNJg4VBsHAJGxuy58nx0n0dGsFcoWOMmKcs1R5UQ8f325548",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/buyer/histories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyer",
+						"histories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Address Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 22|qxdlCHrL2kErFdsQQd6Woux0U7vbkGu1W2dFigWp8dc1fc52",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/buyer/stores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"buyer",
+								"stores"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Jan 2025 10:22:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"List Store\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Toko Badminton Rahman\",\n            \"email\": \"badminton@seller.com\",\n            \"phone\": \"081627236352\",\n            \"address\": \"bekasi\",\n            \"country\": \"indonesia\",\n            \"province\": \"Jawa Barat\",\n            \"city\": \"Bekasi\",\n            \"district\": \"Tarumajaya\",\n            \"postal_code\": \"17211\",\n            \"roles\": \"seller\",\n            \"photo\": \"assets/user/BWpZMGK94oNzrp86MSFYGoFh1FRPSchv8pPabp4W.jpg\",\n            \"email_verified_at\": null,\n            \"created_at\": \"2025-01-07T14:54:22.000000Z\",\n            \"updated_at\": \"2025-01-07T14:54:22.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Toko Elektronik RN\",\n            \"email\": \"elektronik@seller.com\",\n            \"phone\": \"081213234232\",\n            \"address\": \"bekasi\",\n            \"country\": \"indonesia\",\n            \"province\": \"Jawa Barat\",\n            \"city\": \"Bekasi\",\n            \"district\": \"Tarumajaya\",\n            \"postal_code\": \"17211\",\n            \"roles\": \"seller\",\n            \"photo\": \"assets/user/hl1aVeE4UrzYtdjgVYHFfGiVge6N0uIjQwczRs1q.jpg\",\n            \"email_verified_at\": null,\n            \"created_at\": \"2025-01-07T15:23:44.000000Z\",\n            \"updated_at\": \"2025-01-07T15:23:44.000000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "api/buyer/orders Order Buyer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|pNJg4VBsHAJGxuy58nx0n0dGsFcoWOMmKcs1R5UQ8f325548",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"address_id\": 2,\r\n   \"seller_id\": 4,\r\n   \"items\": [\r\n        {\r\n            \"product_id\": 3,\r\n            \"quantity\": 1\r\n        }\r\n     ],\r\n\r\n    \"shipping_cost\": 50000,\r\n    \"shipping_service\": \"GoCar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/buyer/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyer",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "seller update resi",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 8|abVFOZtBdjBlOwsrxJbOJyylaoTeOUjSGaclVlnKa1932995",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"shipping_number\": \"GoCar-1201312343222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/seller/orders/4/update-resi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"orders",
+						"4",
+						"update-resi"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "seller update resi",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 16|Uvere4UA0sQUYk5US3rt8E8WDjCv7nld3ofbIny744735007",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shipping_number\": \"JNE-100023234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/orders/2/update-resi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"orders",
+								"2",
+								"update-resi"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Jan 2025 23:43:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Shipping number updated successfully\",\n    \"order\": {\n        \"id\": 3,\n        \"user_id\": 1,\n        \"address_id\": 2,\n        \"seller_id\": 1,\n        \"total_price\": \"1500000.00\",\n        \"shipping_price\": \"10000.00\",\n        \"grand_total\": \"1510000.00\",\n        \"status\": \"pending\",\n        \"payment_va_name\": null,\n        \"payment_va_number\": null,\n        \"shipping_service\": \"JNE\",\n        \"shipping_number\": \"JNE-93742992\",\n        \"transaction_number\": \"TRX-1736594519\",\n        \"created_at\": \"2025-01-11T11:21:59.000000Z\",\n        \"updated_at\": \"2025-01-11T23:43:53.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "seller histories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 23|Ds2uGln40n0KGbH7d1MCCzRIFCbAvWLQZj7dIUaaa9557c55",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/seller/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"seller",
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "seller update resi",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 16|Uvere4UA0sQUYk5US3rt8E8WDjCv7nld3ofbIny744735007",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shipping_number\": \"JNE-100023234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/orders/2/update-resi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"orders",
+								"2",
+								"update-resi"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 11 Jan 2025 23:43:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Shipping number updated successfully\",\n    \"order\": {\n        \"id\": 3,\n        \"user_id\": 1,\n        \"address_id\": 2,\n        \"seller_id\": 1,\n        \"total_price\": \"1500000.00\",\n        \"shipping_price\": \"10000.00\",\n        \"grand_total\": \"1510000.00\",\n        \"status\": \"pending\",\n        \"payment_va_name\": null,\n        \"payment_va_number\": null,\n        \"shipping_service\": \"JNE\",\n        \"shipping_number\": \"JNE-93742992\",\n        \"transaction_number\": \"TRX-1736594519\",\n        \"created_at\": \"2025-01-11T11:21:59.000000Z\",\n        \"updated_at\": \"2025-01-11T23:43:53.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "store livestreaming",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 24|vQ6pkkzSyN4jMEUohlgi3nbBob16vBq29JuFWzkI3a20ff3a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/buyer/stores/livestreaming",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buyer",
+						"stores",
+						"livestreaming"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/seller/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Toko Badminton Radi",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "radi@seller.com",
+									"description": " ",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0896457894568",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "bekasi",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "indonesia",
+									"type": "text"
+								},
+								{
+									"key": "province",
+									"value": "Jawa Barat",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Bekasi",
+									"type": "text"
+								},
+								{
+									"key": "district",
+									"value": "Tarumajaya",
+									"type": "text"
+								},
+								{
+									"key": "postal_code",
+									"value": "17211",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/rhmndev/Pictures/photos/images.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/seller/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 22:45:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User registered\",\n    \"data\": {\n        \"name\": \"Toko Badminton Radi\",\n        \"email\": \"radi@seller.com\",\n        \"phone\": \"0896457894568\",\n        \"address\": \"bekasi\",\n        \"country\": \"indonesia\",\n        \"province\": \"Jawa Barat\",\n        \"city\": \"Bekasi\",\n        \"district\": \"Tarumajaya\",\n        \"postal_code\": \"17211\",\n        \"roles\": \"seller\",\n        \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n        \"updated_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"id\": 1\n    }\n}"
+				},
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"radi@seller.com\",\r\n    \"password\" : \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.3.15"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 23:07:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User logged in\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Toko Badminton Radi\",\n        \"email\": \"radi@seller.com\",\n        \"phone\": \"0896457894568\",\n        \"address\": \"bekasi\",\n        \"country\": \"indonesia\",\n        \"province\": \"Jawa Barat\",\n        \"city\": \"Bekasi\",\n        \"district\": \"Tarumajaya\",\n        \"postal_code\": \"17211\",\n        \"roles\": \"seller\",\n        \"photo\": \"assets/user/AgTaByC6vcMX9Ygu07BfVBzFJ9dTs5GDn7XEY1BA.jpg\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2024-12-29T22:45:15.000000Z\",\n        \"updated_at\": \"2024-12-29T22:45:15.000000Z\"\n    },\n    \"token\": \"3|a682POYrGCL7YuaWeYswczwqP7j2N4jTdPYEeVl3d946aefc\"\n}"
+				}
+			]
+		}
+	]
+}
