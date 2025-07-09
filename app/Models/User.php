@@ -31,6 +31,7 @@ class User extends Authenticatable
         'postal_code',
         'roles',
         'photo',
+        'is_livestreaming',
     ];
 
     /**
@@ -54,5 +55,10 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
     }
 }

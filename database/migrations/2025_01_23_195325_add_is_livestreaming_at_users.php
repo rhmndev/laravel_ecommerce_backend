@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('addresses', function (Blueprint $table) {
-            //is_default
-            $table->boolean('is_default')->default(0)->after('address');
+        Schema::table('users', function (Blueprint $table) {
+            //is_livestreaming
+            $table->boolean('is_livestreaming')->default(0);
         });
     }
 
@@ -22,8 +22,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('addresses', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             //
+            $table->dropColumn('is_livestreaming');
         });
     }
 };
